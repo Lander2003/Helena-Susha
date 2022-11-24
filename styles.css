@@ -1,0 +1,184 @@
+body{
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, .navbar-brand{
+  font-family: 'Playfair Display', serif;
+}
+
+hr{
+  border-top: 1px solid rgba(0,0,0,.2)
+}
+
+/* Utilities */
+
+.paragraph{
+  color: #545454;
+}
+
+.thumbnail{
+  box-shadow: 1px 1px 4px black;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.img-hover{
+  overflow: hidden;
+  transition: transform .5s ease;
+}
+
+.img-hover:hover{
+  transform: scale(1.05);
+}
+
+
+.h-rule{
+  border: 1px solid #965334;
+  width: 100px;
+  margin-top: 40px;
+}
+
+.btn-custom{
+  border: none;
+  padding: 15px 30px;
+  background-color: #965334;
+  color: white;
+  transition: .1s ease-in background-color;
+}
+
+.btn-custom:hover{
+  background-color:#c56e46;
+}
+
+
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: #823913;
+}
+
+::selection {
+  color: white;
+  background: #823913;
+}
+
+
+/* Navbar */
+
+.navbar{
+  box-shadow: 0 3px 8px black;
+  z-index: 10;
+}
+
+.nav-item{
+  padding: 5px 15px;
+}
+
+.navbar-brand{
+  font-size: 2rem;
+}
+
+
+
+
+/* Showcase */
+
+#heading{
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+  box-shadow: 0 2px 8px black;
+
+}
+
+.heading-h1{
+  text-align: center;
+  padding-top: 150px;
+}
+
+.heading-h1 h1{
+    font-size: 4rem;
+    color: white;
+    transition: font-size .5s ease;
+    animation-name: heading;
+    animation-duration: 2s;
+}
+
+@keyframes heading{
+  from{opacity: 0; padding-left: 200px;};
+  to{opacity: 100%; padding-left: 0;}
+}
+
+.heading-h1 h1:hover{
+  font-size: 4.5rem;
+}
+
+/* Showcase */
+
+#showcase{
+  padding: 100px 0;
+
+}
+
+.showcase-box h1{
+  text-align: center;
+  font-size: 3rem;
+}
+
+.showcase-box{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.showcase-box h1, .showcase-box h2{
+  color: #965334;
+}
+
+/* My life */
+
+#my-life{
+  padding: 0 0 50px 0;
+}
+
+.life-box h1{
+  font-size: 4rem;
+  animation-name: heading2;
+  animation-duration: 2s;
+}
+
+@keyframes heading2{
+  from{padding-left: 200px;};
+  to{padding-left: 0;};
+}
+
+.life-box{
+  padding: 50px 0;
+}
+
+/* Footer */
+
+#footer{
+  background-color: #965334;
+  color: white;
+  padding: 50px 0 0 0;
+  text-align: center;
+}
+
+.social-media{
+  color: white;
+  padding-right: 10px;
+  transition: .2s ease color;
+  cursor: pointer;
+}
+
+.social-media:hover{
+  color: #d2d2d2;
+}
+
+.copyright{
+  padding: 60px 0 0 0;
+}
